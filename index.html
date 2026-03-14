@@ -11,13 +11,66 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- vanilla css  -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 class="font-bold text-2xl">My Website Working</h1>
+    <!-- header part -->
+    <header>
+        <!-- nav bar part started -->
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm lg:px-16">
+                <div class="navbar-start">
+                    <a class="btn bg-transparent border-0 shadow-none text-blue-600 font-bold text-2xl">SwiftCart</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a
+                                class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">Home</a>
+                        </li>
+                        <li><a
+                                class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">Products</a>
+                        </li>
+                        <li><a
+                                class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">About</a>
+                        </li>
+                        <li><a
+                                class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-transparent hover-none border-0 text-2xl font-bold"><i
+                            class="fa-solid fa-cart-plus"></i></a>
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 p-2 shadow">
+                            <li><a class="font-bold text-lg active:bg-blue-600 active:text-white">Home</a>
+                            </li>
+                            <li><a class="font-bold text-lg active:bg-blue-600 active:text-white">Products</a>
+                            </li>
+                            <li><a class="font-bold text-lg active:bg-blue-600 active:text-white">About</a>
+                            </li>
+                            <li><a class="font-bold text-lg active:bg-blue-600 active:text-white">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
