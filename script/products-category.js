@@ -26,14 +26,18 @@ const displayProductsCategory = (categories) => {
     allBtn.classList.add("btn", "btn-primary");
     allBtn.innerText = "ALL";
 
+    allBtn.addEventListener("click", () => {
+        loadAllProducts();   
+    });
+
     productsCategoryDiv.appendChild(allBtn);
 
     categories.forEach(category => {
 
-        const productCategoryBtn = document.createElement("button");
-        productCategoryBtn.classList.add("btn", "btn-primary");
-        productCategoryBtn.innerText = category;
-       
+        const productCategoryBtn = document.createElement("div");
+        productCategoryBtn.innerHTML = `
+            <button class="btn btn-primary" onclick="loadProducts('${category.replace(/'/g, "\\'")}')">${category}</button>
+        `
         productsCategoryDiv.appendChild(productCategoryBtn);
     })
 
