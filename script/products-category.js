@@ -20,7 +20,7 @@ const loadProductsCategory = () => {
 
 const displayProductsCategory = (categories) => {
     const productsCategoryDiv = document.createElement("div");
-    productsCategoryDiv.classList.add("flex", "gap-3", "flex-wrap");
+    productsCategoryDiv.classList.add("flex", "gap-3", "flex-wrap", "justify-center");
 
     const allBtn = document.createElement("button");
     allBtn.classList.add("btn", "btn-primary");
