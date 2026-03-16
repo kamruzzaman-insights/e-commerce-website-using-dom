@@ -20,162 +20,90 @@
 </head>
 
 <body>
-    <div>
-        <!-- header part -->
-        <header class="max-w-[1320px] mx-auto">
-            <!-- nav bar part started -->
-            <nav class="fixed top-0 left-0 w-full z-50">
-                <div class="navbar bg-gray-200 shadow-sm">
-                    <div class="navbar-start">
-                        <a
-                            class="btn bg-transparent border-0 shadow-none text-blue-600 font-bold text-2xl">SwiftCart</a>
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1">
-                            <li><a
-                                    class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">Home</a>
+    <!-- header part started-->
+    <header class="max-w-[1320px] mx-auto">
+        <!-- nav bar part started -->
+        <nav class="fixed top-0 left-0 w-full z-50">
+            <div class="navbar bg-gray-200 shadow-sm">
+                <div class="navbar-start">
+                    <a class="btn bg-transparent border-0 shadow-none text-blue-600 font-bold text-2xl">SwiftCart</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a
+                                class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">Home</a>
+                        </li>
+                        <li><a
+                                id="products-btn" class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">Products</a>
+                        </li>
+                        <li><a
+                                class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">About</a>
+                        </li>
+                        <li><a
+                                class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-transparent hover-none border-0 text-2xl font-bold"><i
+                            class="fa-solid fa-cart-plus"></i></a>
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 p-2 shadow">
+                            <li><a class="font-bold text-lg active:bg-blue-600 active:text-white">Home</a>
                             </li>
-                            <li><a
-                                    class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">Products</a>
+                            <li><a class="font-bold text-lg active:bg-blue-600 active:text-white">Products</a>
                             </li>
-                            <li><a
-                                    class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">About</a>
+                            <li><a class="font-bold text-lg active:bg-blue-600 active:text-white">About</a>
                             </li>
-                            <li><a
-                                    class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">Contact</a>
+                            <li><a class="font-bold text-lg active:bg-blue-600 active:text-white">Contact</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="navbar-end">
-                        <a class="btn bg-transparent hover-none border-0 text-2xl font-bold"><i
-                                class="fa-solid fa-cart-plus"></i></a>
-                        <div class="dropdown dropdown-end">
-                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h8m-8 6h16" />
-                                </svg>
-                            </div>
-                            <ul tabindex="-1"
-                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 p-2 shadow">
-                                <li><a class="font-bold text-lg active:bg-blue-600 active:text-white">Home</a>
-                                </li>
-                                <li><a class="font-bold text-lg active:bg-blue-600 active:text-white">Products</a>
-                                </li>
-                                <li><a class="font-bold text-lg active:bg-blue-600 active:text-white">About</a>
-                                </li>
-                                <li><a class="font-bold text-lg active:bg-blue-600 active:text-white">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- navbar part end  -->
-
-            <!-- banner part -->
-            <div class="pt-20 lg:px-12">
-                <div class="relative w-full max-w-[100vw] overflow-hidden">
-                    <img src="assets/young-man-looking-shopping-bags.jpg" alt="" class="w-full h-auto lg:max-h-[110vh]">
-
-                    <div class="absolute inset-0 bg-black/30"></div>
-
-                    <div class="absolute inset-0 flex flex-col items-start justify-center text-white px-4">
-                        <h1 class="text-3xl md:text-5xl font-bold mb-2">Best Collection For You</h1>
-                        <p class="text-lg md:text-xl mb-2">
-                            Discover the latest trends in fashion, electronics,
-                            and more. Shop with <br> confidence and
-                            style at SwiftCart.
-                        </p>
-                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
-                            Shop Now
-                        </button>
-                    </div>
-
                 </div>
             </div>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolorem praesentium molestias explicabo
-                corporis voluptates. Aliquam, aspernatur adipisci ratione quas consequatur facilis expedita deleniti
-                dolores, quo dignissimos itaque. Exercitationem repellendus perferendis velit sit facere quia eum
-                inventore voluptatem quaerat alias ad, recusandae possimus omnis necessitatibus culpa corporis quibusdam
-                quidem ipsa illo quae! Nam dolores quis aperiam aliquam maxime, corporis consequuntur, consectetur esse
-                cupiditate, officiis placeat expedita sapiente perspiciatis nostrum provident rem commodi nemo
-                accusantium perferendis quasi. Voluptatum dolores, ratione aspernatur suscipit ut voluptate odio beatae
-                cum numquam odit nobis excepturi repudiandae, dignissimos modi vel. Molestiae saepe eius eligendi
-                officia. Ex repudiandae minima adipisci veritatis excepturi, numquam magni cupiditate iste dolorum aut
-                esse culpa fugiat architecto a qui voluptate dignissimos totam nihil at aliquam quae! Nobis fugit cum
-                mollitia iure ullam explicabo beatae eos! Repudiandae a et ipsam adipisci molestias quos, libero dolore
-                hic quam fugit. Magni unde, modi maxime recusandae dolore totam molestias voluptatem cum dolor.
-                Accusantium facere, perferendis ea dignissimos atque eligendi neque quibusdam non esse quod? Ab,
-                deleniti officiis quam, quasi molestiae laboriosam atque quae possimus ex sunt facilis, doloribus autem
-                hic tempore maxime dolore minima numquam magni. Ex mollitia, esse, fugiat provident commodi voluptates
-                accusamus veniam, obcaecati quae reprehenderit eveniet? Suscipit consequatur eveniet vel molestias
-                aperiam animi, ipsa deleniti pariatur fugiat voluptatum delectus similique dolore ipsum, itaque at
-                sapiente incidunt praesentium eum voluptatibus repellat aliquam tempora reiciendis dolorem. Aut,
-                doloribus! Id veritatis molestiae minima, culpa eum labore cum suscipit consequuntur rerum quae repellat
-                quibusdam aspernatur dolorem in sint praesentium, dolorum excepturi facere fuga. Accusamus aliquid
-                pariatur aut numquam impedit recusandae earum, optio ad debitis modi labore, accusantium vero?
-                Doloremque odio accusamus sit at? Dolores similique, commodi iste doloribus in perspiciatis fugiat
-                quaerat dolor nam autem nesciunt est reprehenderit ratione. Consequuntur adipisci asperiores illum modi
-                possimus nulla aliquid, maiores iusto quasi blanditiis optio, nemo delectus accusantium? Excepturi
-                similique ab optio qui officiis. Nulla explicabo beatae porro earum officia. Libero voluptate expedita
-                fugiat incidunt molestias laborum harum, non dolore optio voluptates dolor at eius ex provident aliquid
-                accusamus quaerat in nostrum inventore numquam maxime tenetur sint. In velit deserunt illo facere
-                veritatis maxime quas laborum quaerat id blanditiis accusamus alias sed delectus cum facilis voluptas
-                nemo fuga, corrupti repudiandae distinctio qui voluptate ad quo asperiores! Dignissimos eius, quae rerum
-                voluptas dicta ipsam cum sit repellendus dolorem debitis! Tempora omnis similique quas officiis
-                doloribus quod at, officia ipsa laboriosam illum odit eius temporibus suscipit iste placeat libero
-                consectetur nisi sed totam expedita aut. Odio id non dolore, illo ratione expedita quidem atque.
-                Maiores, iusto aperiam velit blanditiis eum molestiae modi corporis unde sequi consequatur. Pariatur
-                nisi non unde consequatur aperiam exercitationem porro dolore beatae iste praesentium quis nobis esse,
-                facere officiis, quas alias. Expedita, perspiciatis fugit? Odit numquam aliquam perspiciatis aut, vel
-                amet ipsa corporis exercitationem ex ea molestias nulla quisquam laudantium recusandae adipisci illo
-                beatae molestiae reprehenderit perferendis repudiandae dolorum quos, accusantium minus. Repellendus
-                ullam sed blanditiis! Eaque deleniti ut beatae animi obcaecati odio molestias vero natus! Culpa itaque
-                esse blanditiis omnis cupiditate! Earum dicta voluptate odit dolorum nobis, ducimus magni unde illo
-                asperiores fugit mollitia hic magnam similique voluptates voluptas laudantium repellat et saepe sint
-                placeat aliquam, iusto quae. Velit suscipit, aliquam et sequi ab repudiandae, debitis repellendus iusto
-                sint tenetur quod alias enim impedit quisquam exercitationem omnis aliquid porro, animi laudantium magni
-                provident voluptas quo laborum temporibus. Cum qui excepturi ea. Provident vel facilis animi molestiae
-                recusandae, quo id aspernatur at dicta consequatur dolorum nobis possimus quisquam sit eius excepturi
-                aliquam. Minus eligendi doloribus officia illo, deserunt aspernatur eveniet exercitationem quos eum nisi
-                ut inventore veniam officiis impedit, at in unde numquam rerum? Nam et dolores dolor incidunt deserunt
-                in architecto eum itaque facere voluptas! Quis minima at sit quas est cupiditate dignissimos, error
-                voluptas, ratione aperiam facere. Assumenda pariatur distinctio consectetur sit asperiores quidem
-                maiores voluptas suscipit dolorum tempora ullam possimus neque molestiae et eveniet similique
-                consequatur reprehenderit, voluptatibus aperiam, est quam? Quod earum incidunt praesentium laudantium
-                aut iusto repellendus natus animi culpa maiores qui cum in fugit asperiores totam, quo iste, itaque,
-                ducimus veniam numquam cupiditate eligendi rem similique delectus. Repellendus deleniti odio amet totam
-                consectetur voluptatum ipsum nemo similique, consequuntur nam dolorum sit harum cupiditate tempora
-                veritatis commodi in quisquam maiores reprehenderit nisi. Voluptas voluptates dolores quo et dolorum
-                illum nobis explicabo ad tempora iusto, hic incidunt vel quos consequatur, accusamus sint quas quia,
-                cupiditate consequuntur perferendis totam placeat. Nam rerum incidunt perferendis, ut accusamus minus
-                vitae nobis omnis voluptatum distinctio nostrum nulla veniam, illum voluptates corrupti necessitatibus
-                eligendi dolore magnam est dolorum fugiat. Incidunt, pariatur? Molestias quidem sequi, vero cum
-                voluptate perferendis aut asperiores veritatis mollitia nemo ratione ipsam ex blanditiis, dolorum
-                voluptatibus illum! Necessitatibus voluptatem quos, ad officia nostrum fuga, earum rem ipsum similique
-                explicabo quis sequi, in facilis eius optio minima consectetur soluta vitae repudiandae! Consequuntur
-                magni nostrum esse molestias tenetur debitis illo dolor temporibus. At fugiat ex repudiandae deserunt
-                voluptatem nulla velit harum! Veritatis ea repellendus consequuntur ipsa maxime nihil, libero qui!
-                Voluptates nemo ex provident, aperiam pariatur nobis architecto optio vitae accusantium sit porro
-                voluptate dolorum repellendus quibusdam eveniet perspiciatis voluptas deleniti minus ut molestias,
-                accusamus saepe obcaecati rerum fuga! Recusandae minus repellat dolor laboriosam, dolorem reprehenderit
-                eum! Incidunt excepturi eum deserunt ducimus et sunt qui mollitia ab, eveniet vitae repudiandae
-                doloribus cum tempora nostrum saepe harum pariatur iure recusandae maxime, suscipit, debitis nulla.
-                Aspernatur blanditiis id molestiae vitae deserunt animi amet libero placeat unde repellat laboriosam
-                atque mollitia veniam reprehenderit necessitatibus molestias, et esse nulla quasi non voluptate officia
-                quam quia aperiam. Labore deserunt repellat adipisci incidunt est. Aut cumque in nesciunt minima odit.
-                Repudiandae, tempora? Eum voluptate mollitia unde fugiat illum aut minima neque repellat iusto non est,
-                nisi, quas distinctio minus deleniti beatae commodi facere modi ad sed sint! Ab voluptates, nesciunt
-                esse officiis repudiandae asperiores aspernatur quos natus praesentium libero explicabo iusto ut quidem
-                nulla quo enim. Nemo maiores et perferendis unde odit nisi cumque perspiciatis provident, labore magnam
-                pariatur eum dolor impedit praesentium. Molestias.
+        </nav>
+        <!-- navbar part end  -->
+
+        <!-- banner part -->
+        <div class="pt-20 lg:px-12">
+            <div class="relative w-full max-w-[100vw] overflow-hidden">
+                <img src="assets/young-man-looking-shopping-bags.jpg" alt="" class="w-full h-auto lg:max-h-[110vh]">
+
+                <div class="absolute inset-0 bg-black/30"></div>
+
+                <div class="absolute inset-0 flex flex-col items-start justify-center text-white px-4">
+                    <h1 class="text-3xl md:text-5xl font-bold mb-2">Best Collection For You</h1>
+                    <p class="text-lg md:text-xl mb-2">
+                        Discover the latest trends in fashion, electronics,
+                        and more. Shop with <br> confidence and
+                        style at SwiftCart.
+                    </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
+                        Shop Now
+                    </button>
+                </div>
+
             </div>
-    </div>
+        </div>
     </header>
-    </div>
+    <!-- header part end  -->
+
+    <!-- main part started-->
+     <main>
+        <!-- products category part -->
+         <div id="products-category-container" class="flex flex-col gap-3 flex-wrap justify-center items-center my-12">
+
+         </div>
+     </main>
+     <script src="script/products-category.js"></script>
 </body>
 
 </html>
