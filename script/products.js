@@ -27,7 +27,7 @@ const displayProducts = (products) => {
             </figure>
             <div class="card-body">
                 <div class="flex justify-between">
-                <h3 class="bg-purple-300 px-2 font-medium rounded text-lg">${product.category}</h3>
+                <h3 class="bg-violate-300 px-2 font-medium rounded text-lg">${product.category}</h3>
                 <h3 class="font-medium text-slate-400 text-lg"><i class="fa-solid fa-star text-yellow-500"></i>${product.rating.rate} (${product.rating.count})</h3>
                 </div>
                 <h2 class="card-title w-full line-clamp-1 font-semibold">

@@ -33,8 +33,8 @@
                         <li><a
                                 class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">Home</a>
                         </li>
-                        <li><a
-                                id="products-btn" class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">Products</a>
+                        <li><a id="products-btn"
+                                class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">Products</a>
                         </li>
                         <li><a
                                 class="font-bold text-lg hover:bg-transparent hover:shadow-none active:bg-transparent active:text-blue-600 active:shadow-none">About</a>
@@ -97,20 +97,62 @@
     <!-- header part end  -->
 
     <!-- main part started-->
-     <main class="max-w-[1320px] mx-auto lg:px-12">
+    <main class="max-w-[1320px] mx-auto lg:px-12">
+        <!-- about us part -->
+        <section>
+            <div class="text-center my-12">
+                <h1 class="text-2xl font-bold">Why Choose Us</h1>
+                <p class="text-slate-400 font-medium">We provide the best shopping experience with top-notch services
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-6 space-y-6">
+                <div class="rounded shadow p-4 relative">
+                    <div class="absolute -top-6 left-4 bg-blue-200 p-2 rounded">
+                        <i class="fa-regular fa-truck"></i>
+                    </div>
+                    <h3 class="font-medium text-lg">Fast Delivery</h3>
+                    <p class="text-slate-400 font-medium">Get your orders delivered to your doorstep quickly and
+                        efficiently</p>
+                </div>
+                <div class="rounded shadow p-4 relative">
+                    <div class="absolute -top-6 left-4 bg-blue-200 p-2 rounded">
+                        <i class="fa-regular fa-headphones"></i>
+                    </div>
+                    <h3 class="font-medium text-lg">24/7 Support</h3>
+                    <p class="text-slate-400 font-medium">Our support team is avallutle around the clock to assist you.
+                    </p>
+                </div>
+                <div class="rounded shadow p-4 relative">
+                    <div class="absolute -top-6 left-4 bg-blue-200 p-2 rounded">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <h3 class="font-medium text-lg">Secure Payment</h3>
+                    <p class="text-slate-400 font-medium">Experence safe and secure transactions with our encrypted
+                        payment systems</p>
+                </div>
+                <div class="rounded shadow p-4 relative">
+                    <div class="absolute -top-6 left-4 bg-blue-200 p-2 rounded">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <h3 class="font-medium text-lg">Easy Returns</h3>
+                    <p class="text-slate-400 font-medium">Not satisfied? Ratum your products easily within 30 days</p>
+                </div>
+            </div>
+        </section>
+
         <!-- products category part -->
-         <div id="products-category-container" class="flex flex-col gap-3 flex-wrap justify-center items-center my-12">
+        <div id="products-category-container" class="flex flex-col gap-3 flex-wrap justify-center items-center my-12">
 
-         </div>
-         
-         <!-- products part  -->
-          <div id="products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
 
-          </div>
-     </main>
-     
-     <script src="script/products-category.js"></script>
-     <script src="script/products.js"></script>
+        <!-- products part  -->
+        <div id="products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        </div>
+    </main>
+
+    <script src="script/products-category.js"></script>
+    <script src="script/products.js"></script>
 </body>
 
 </html>
