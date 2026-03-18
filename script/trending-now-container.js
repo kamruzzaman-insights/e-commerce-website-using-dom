@@ -1,21 +1,18 @@
-const loadProducts = (category) => {
-    fetch(`https://fakestoreapi.com/products/category/${category}`)
-        .then(res => res.json())
-        .then(products => displayProducts(products))
-}
-
-const loadAllProducts = () => {
+const loadAllProductsForTrending = () => {
     fetch("https://fakestoreapi.com/products")
         .then(res => res.json())
-        .then(products => displayProducts(products))
+        .then(products => displayTrendingProducts(products))
 }
 
-const displayProducts = (products) => {
-    const productsContainer = document.getElementById("products-container");
-    productsContainer.innerHTML = "";
+const displayTrendingProducts = (products) => {
 
-    products.forEach(product => {
-        console.log(product);
+    const topThreeRattingProducts = [...products].sort((a, b) => b.rating.rate - a.rating.rate).slice(0, 3);
+
+    const trendingNowContainer = document.getElementById("trending-now-container");
+    trendingNowContainer.innerHTML = "";
+
+    topThreeRattingProducts.forEach(product => {
+
         const card = document.createElement("div");
 
         card.innerHTML = `
@@ -42,6 +39,8 @@ const displayProducts = (products) => {
             </div>
             </div>
         `
-        productsContainer.appendChild(card);
+        trendingNowContainer.appendChild(card);
     })
 }
+
+loadAllProductsForTrending();
